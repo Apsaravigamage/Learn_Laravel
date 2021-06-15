@@ -7,9 +7,8 @@ use Illuminate\Http\Request;
 class Users extends Controller
 {
     //
-    public function index($user)
+    public function index($name)
     {
-        echo $user;
-        echo" Hello Controller";
+        return view("users",['name'=>$name]);
     }
 }
